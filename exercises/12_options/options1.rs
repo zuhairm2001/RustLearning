@@ -5,9 +5,10 @@
 fn maybe_icecream(hour_of_day: u16) -> Option<u16> {
     // TODO: Complete the function body.
     if hour_of_day < 22{
-        let ice_left: Option<u16> = Some(5);
-        return ice_left;
-    }
+        return Some(5);
+    } if hour_of_day < 24{
+        return Some(0);
+    } 
     None
 }
 
